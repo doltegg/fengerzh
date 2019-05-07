@@ -7,7 +7,7 @@ tags:
   - javascript
   - jssdk
 description: 几乎每一个开发用于微信公众号页面的工程师都遇到过微信jssdk报的各种错误，通常是permission denied。
-color: black
+color: white
 ---
 
 几乎每一个开发用于微信公众号页面的工程师都遇到过微信`jssdk`报的各种错误，通常是`permission denied`，类似这样：
