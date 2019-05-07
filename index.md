@@ -6,7 +6,8 @@ color: black
 <main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <button id="request" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="display: none;">Request Permission</button>
     <div id="grid" class="row flex-grid">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
+    <!--{% for post in site.posts %}-->
         <article class="box-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <span class="category">
                 <a href="{{ site.url }}{{ site.baseurl }}/category/{{ post.category }}">
@@ -51,4 +52,5 @@ color: black
         <article class="box-item">
         </article>
     </div>
+   {% include pagination.html %}
 </main>
